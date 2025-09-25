@@ -1,46 +1,65 @@
 package me.absurdity.apanel;
 
-
 import me.absurdity.apanel.gui.DailyRewardGUI;
 import me.absurdity.apanel.listeners.GUIClickEvent;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
-import java.util.concurrent.Executor;
 
 public final class main extends JavaPlugin {
 
+    private FileConfiguration rewardsConfig;
+    private FileConfiguration messagesConfig;
+
     @Override
     public void onEnable() {
-        getLogger().info("AdminPanel Enabled");
+        getLogger().info("DailyRewards Enabled");
 
-        this.getCommand("daily").setExecutor(new DailyRewardGUI(this));
+        // Register command + GUI
+        this.getCommand("daily").setExecutor((CommandExecutor) new DailyRewardGUI(this));
         getServer().getPluginManager().registerEvents(new GUIClickEvent(this), this);
 
+        // Save config files if not present
         saveDefaultConfig();
-        saveResource("config.yml", false);
-        saveResource("messages.yml", true);
-        reloadRewards();
-        }
+        saveResource("messages.yml", false);
 
-        private FileConfiguration rewardsConfig;
+        loadRewardsConfig();
+        loadMessagesConfig();
+    }
 
-        public void reloadRewards() {
-            File rewardsFile = new File(getDataFolder(), "rewards.yml");
-            File messagesFile = new File(getDataFolder(), "messages.yml");
-            rewardsConfig = YamlConfiguration.loadConfiguration(rewardsFile);
-        }
+    @Override
+    public void onDisable() {
+        getLogger().info("Daily Rewards Disabled");
+    }
+
 
     public FileConfiguration getRewardsConfig() {
         return rewardsConfig;
     }
 
-    @Override
-        public void onDisable() {
-        getLogger().info("AdminPanel Enabled");
+    private void loadRewardsConfig() {
+        File file = new File(getDataFolder(), "config.yml");
+        rewardsConfig = YamlConfiguration.loadConfiguration(file);
     }
 
+
+    public FileConfiguration getMessagesConfig() {
+        return messagesConfig;
     }
 
+    private void loadMessagesConfig() {
+        File file = new File(getDataFolder(), "messages.yml");
+        messagesConfig = YamlConfiguration.loadConfiguration(file);
+    }
+
+    public void reloadRewards() {
+        loadRewardsConfig();
+    }
+
+    public void reloadMessages() {
+        loadMessagesConfig();
+    }
+}

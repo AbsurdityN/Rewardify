@@ -1,64 +1,22 @@
 daily-rewards:
   day1:
-    material: DIAMOND
+    slot: 0
     amount: 1
-    slot: 11
+    display-name: "&bDay 1 Reward"
+    lore:
+      - "&7Get started with a shiny diamond!"
     unclaimed-material: EMERALD_BLOCK
-    claimed-material: COAL_BLOCK
-    display-name: "&aClaim Daily Reward"
-    already-claimed-message: "&cYou already claimed this reward today."
-    claim-message: "&aYou claimed your daily reward!"
+    unclaimed-display-name: "&aClick to Claim!"
+    unclaimed-lore:
+      - "&eYour reward is ready."
+    claimed-material: REDSTONE_BLOCK
+    claimed-display-name: "&cAlready Claimed"
+    claimed-lore:
+      "&7Next reward in: &c%hours%h %minutes%m"
+
   day2:
-    reward: DIAMOND
-    amount: 1
-    slot: 11
-    unclaimed-material: EMERALD_BLOCK
-    claimed-material: COAL_BLOCK
-    display-name: "&aClaim Daily Reward"
-    already-claimed-message: "&cYou already claimed this reward today."
-    claim-message: "&aYou claimed your daily reward!"
-  day3:
-    reward: DIAMOND
-    amount: 1
-    slot: 11
-    unclaimed-material: EMERALD_BLOCK
-    claimed-material: COAL_BLOCK
-    display-name: "&aClaim Daily Reward"
-    already-claimed-message: "&cYou already claimed this reward today."
-    claim-message: "&aYou claimed your daily reward!"
-  day4:
-    reward: DIAMOND
-    amount: 1
-    slot: 11
-    unclaimed-material: EMERALD_BLOCK
-    claimed-material: COAL_BLOCK
-    display-name: "&aClaim Daily Reward"
-    already-claimed-message: "&cYou already claimed this reward today."
-    claim-message: "&aYou claimed your daily reward!"
-  day5:
-    reward: DIAMOND
-    amount: 1
-    slot: 11
-    unclaimed-material: EMERALD_BLOCK
-    claimed-material: COAL_BLOCK
-    display-name: "&aClaim Daily Reward"
-    already-claimed-message: "&cYou already claimed this reward today."
-    claim-message: "&aYou claimed your daily reward!"
-  day6:
-    reward: DIAMOND
-    amount: 1
-    slot: 11
-    unclaimed-material: EMERALD_BLOCK
-    claimed-material: COAL_BLOCK
-    display-name: "&aClaim Daily Reward"
-    already-claimed-message: "&cYou already claimed this reward today."
-    claim-message: "&aYou claimed your daily reward!"
-  day7:
-    reward: DIAMOND
-    amount: 1
-    slot: 11
-    unclaimed-material: EMERALD_BLOCK
-    claimed-material: COAL_BLOCK
-    display-name: "&aClaim Daily Reward"
-    already-claimed-message: "&cYou already claimed this reward today."
-    claim-message: "&aYou claimed your daily reward!"
+    slot: 1
+    amount: 5
+    display-name: "&fDay 2 Reward"
+    unclaimed-material: GOLD_BLOCK
+    claimed-material: REDSTONE_BLOCK
