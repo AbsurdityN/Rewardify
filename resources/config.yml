@@ -1,0 +1,64 @@
+daily-rewards:
+  day1:
+    material: DIAMOND
+    amount: 1
+    slot: 11
+    unclaimed-material: EMERALD_BLOCK
+    claimed-material: COAL_BLOCK
+    display-name: "&aClaim Daily Reward"
+    already-claimed-message: "&cYou already claimed this reward today."
+    claim-message: "&aYou claimed your daily reward!"
+  day2:
+    reward: DIAMOND
+    amount: 1
+    slot: 11
+    unclaimed-material: EMERALD_BLOCK
+    claimed-material: COAL_BLOCK
+    display-name: "&aClaim Daily Reward"
+    already-claimed-message: "&cYou already claimed this reward today."
+    claim-message: "&aYou claimed your daily reward!"
+  day3:
+    reward: DIAMOND
+    amount: 1
+    slot: 11
+    unclaimed-material: EMERALD_BLOCK
+    claimed-material: COAL_BLOCK
+    display-name: "&aClaim Daily Reward"
+    already-claimed-message: "&cYou already claimed this reward today."
+    claim-message: "&aYou claimed your daily reward!"
+  day4:
+    reward: DIAMOND
+    amount: 1
+    slot: 11
+    unclaimed-material: EMERALD_BLOCK
+    claimed-material: COAL_BLOCK
+    display-name: "&aClaim Daily Reward"
+    already-claimed-message: "&cYou already claimed this reward today."
+    claim-message: "&aYou claimed your daily reward!"
+  day5:
+    reward: DIAMOND
+    amount: 1
+    slot: 11
+    unclaimed-material: EMERALD_BLOCK
+    claimed-material: COAL_BLOCK
+    display-name: "&aClaim Daily Reward"
+    already-claimed-message: "&cYou already claimed this reward today."
+    claim-message: "&aYou claimed your daily reward!"
+  day6:
+    reward: DIAMOND
+    amount: 1
+    slot: 11
+    unclaimed-material: EMERALD_BLOCK
+    claimed-material: COAL_BLOCK
+    display-name: "&aClaim Daily Reward"
+    already-claimed-message: "&cYou already claimed this reward today."
+    claim-message: "&aYou claimed your daily reward!"
+  day7:
+    reward: DIAMOND
+    amount: 1
+    slot: 11
+    unclaimed-material: EMERALD_BLOCK
+    claimed-material: COAL_BLOCK
+    display-name: "&aClaim Daily Reward"
+    already-claimed-message: "&cYou already claimed this reward today."
+    claim-message: "&aYou claimed your daily reward!"

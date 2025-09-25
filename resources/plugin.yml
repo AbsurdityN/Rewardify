@@ -1,0 +1,8 @@
+main: me.absurdity.apanel.main
+name: AdminPanel
+version: 0.4.0
+api-version: 1.16
+
+commands:
+  daily:
+    description: Get your daily rewards!
